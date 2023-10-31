@@ -1,0 +1,36 @@
+@media (max-width: 500px) {
+  .main-container-title {
+    font-size: 1.9rem;
+  }
+  .blogs-main-new,
+  .about-me {
+    display: block;
+  }
+  .about-me-container h3 {
+    padding-top: 20px;
+  }
+  .blogs-posts-container .post-container {
+    max-width: 48%;
+  }
+  .header-icons-container .icons {
+    max-width: 271px;
+  }
+  .contact-main-container .contact {
+    flex-direction: column;
+  }
+  .contact-main-container .contact div {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .projects-container h3 {
+    margin: 20px;
+  }
+  .professional-skills .grid-container {
+    max-width: 340px;
+    grid-template: repeat(4, auto) / repeat(2, 1fr);
+    gap: 20px;
+  }
+  .skill-item {
+    width: 160px;
+  }
+}
