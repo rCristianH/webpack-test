@@ -1,4 +1,6 @@
 import "../css/main.css"
+import "../css/mobile.css"
+import "../css/tablet.css"
 import "../css/font/flaticon.css"
 
 const container = document.querySelector(".icons");

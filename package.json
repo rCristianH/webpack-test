@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --open --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "onchange 'css/**/*.css' 'distJs/**/*.js' 'public/**/*.html' -- npm run build",
+    "start": "webpack-dev-server --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +21,9 @@
     "css-loader": "^6.8.1",
     "D": "^1.0.0",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.0.0",
     "html-webpack-plugin": "^5.5.3",
+    "onchange": "^7.1.0",
     "style-loader": "^3.3.3",
     "ts-loader": "^9.5.0",
     "typescript": "^5.2.2",
